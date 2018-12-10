@@ -38,19 +38,23 @@ class HostMovies extends React.Component {
 
     createMovie() {
         let url = '';
+        console.log(this.state.link);
         if (this.state.link.includes('tt')) {
+            console.log('if');
             url = 'http://www.omdbapi.com/?apikey=c1cb9ddb&i=' + this.state.link;
         }
         else {
+            console.log('else');
             url = 'http://www.omdbapi.com/?apikey=c1cb9ddb&s=' + this.state.link;
         }
-
+        console.log(url);
         fetch(url).then(response => {
-            let d = response.json();
-            // console.log(d);
-            return d;
+            return response.json();
         }).then(movie => {
-            // console.log(movie);
+            if (movie['Search'] != null) {
+                movie = movie['Search'][0]
+            }
+            console.log(movie);
             let key, keys = Object.keys(movie);
             let n = keys.length;
             let newObj = {};
@@ -64,7 +68,7 @@ class HostMovies extends React.Component {
             this.MovieService.addMovie(newObj).then(() => {
                 // console.log(newObj);
                 alert("movie added successfully");
-                window.location.reload(); 
+                window.location.reload();
             })
         });
     }

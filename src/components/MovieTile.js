@@ -35,9 +35,11 @@ export default class MovieTile
                         <img className="poster img-responsive" src={this.props.movie.poster}/>
                         <p className="card-text">{this.props.movie.summary}</p>
                         <p className="card-text">Languages: {this.props.movie.languages}</p>
+                        {this.props.movie.cast != null &&
                         <ul>
                             {this.props.movie.cast.split(", ").map(cast => (<li> {cast}</li>))}
                         </ul>
+                        }
                         <p className="card-text">Genre: {this.props.movie.genre}</p>
                     </div>
                 </div>

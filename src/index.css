@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.clickable-card {
+
+    cursor: pointer;
+
+}
+
+.searchBar {
+
+    margin-bottom: 20Px;
+    margin-top: 20px;
+}
+
+.movieTitle {
+
+    text-align: center;
+
+}
+
+.input-group {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group1 {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-buttons {
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.profile-container {
+
+    margin-top: 20px;
+}
+
+.lang-list {
+
+    margin-left: 30px;
+
+}
+
+.heading-movie {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.add-movie {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.movies-list {
+    margin-top: 10px;
+}
+
+.registration {
+    margin-top: 30px;
+    margin-bottom: 10px
+
+}
+
+.navbar-collapse.collapse.in {
+    display: block !important;
+}
+
+.tile-button {
+
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.reviewBox {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border: 1px solid grey;
+    padding: 2px;
+
+}
+
+.app-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.app-container1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.movie-delete {
+    margin-top: 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.loginBox {
+    margin-top: 75px;
+    position: fixed;
+    left: 20%;
+}
+
+.navbar {
+    background: #c98d00;
+    /*background: #F5C518;*/
+    color: black;
+}
+
+.navbar-brand {
+    margin-left: 0%;
+    color: black;
+}
+
+.nav-link{
+    color: black;
+}
+
+#navbarNav {
+    margin-left: 30%;
+    color: black;
+}
+
+.poster {
+    width: 100%;
+}
